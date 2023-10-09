@@ -7,10 +7,11 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "format": "prettier --write \"**/*.{js,jsx,tsx,ts,css,scss,md}\"",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install"
   },
   "dependencies": {
+    "prettier-plugin-organize-imports": "^3.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.16.0",
@@ -44,7 +45,7 @@
       "eslint --fix"
     ],
     "*.json": [
-      "eslint --fix"
+      "prettier --write"
     ]
   },
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
