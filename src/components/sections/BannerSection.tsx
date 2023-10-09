@@ -2,7 +2,7 @@ import React from 'react'
 
 const BannerSection = () =>{
   return (
-    <div>BannerSection</div>
+    <div>testing husky</div>
   )
 }
 
