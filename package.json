@@ -41,7 +41,7 @@
     }
   },
   "lint-staged": {
-    "apps/**/*.{js,ts,jsx,tsx}": [
+    "src/**/*.{js,ts,jsx,tsx}": [
       "eslint --fix"
     ],
     "*.json": [
