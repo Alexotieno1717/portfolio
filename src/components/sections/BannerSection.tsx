@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const BannerSection = () =>{
-  return (
-    <div>testing husky</div>
-  )
-}
+const BannerSection = () => {
+  return <div>testing husky if works</div>;
+};
 
-export default BannerSection
+export default BannerSection;
