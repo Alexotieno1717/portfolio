@@ -1,4 +1,3 @@
-import img from '../../assets/Home_art 1.svg';
 import { ISectionBanner } from '../../../types';
 import { Link } from 'react-router-dom';
 
@@ -9,10 +8,11 @@ interface BannerSectionProps {
 const BannerSection = ({ data }: BannerSectionProps) => {
   return (
     <div className="lg:max-w-4xl xl:max-w-[1031px]  flex flex-wrap items-center justify-between mx-auto px-4 lg:px-0 py-20">
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <div>
-          <h1 className="text-4xl font-semibold text-white pt-20">
-            {data.title} <span className="text-primary-purple">{data.keyword}</span>
+          <h1 className="text-xl md:text-3xl font-semibold text-white md:pt-32">
+            {data.title} <span className="text-primary-purple">{data.keyword}</span> and
+            <span className="text-primary-purple"> {data.Keyword1}</span>
           </h1>
           <p className="text-primary-gray text-base font-normal pt-8 pb-6">{data.description}</p>
           <Link
@@ -23,7 +23,7 @@ const BannerSection = ({ data }: BannerSectionProps) => {
           </Link>
         </div>
         <div>
-          <img src={img} alt="svg home art" className="w-[505px] h-[397px] pt-16" />
+          <img src={data.img} alt="svg home art" className="w-[505px] h-[397px] pt-16" />
           <div className="flex gap-2 border border-primary-gray w-[75%] ml-14 py-2 px-2">
             <div className="bg-primary-purple w-4 h-4 mt-1 ml-"></div>
             <p className="text-primary-gray text-base font-semibold">

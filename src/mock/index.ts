@@ -3,7 +3,8 @@ import { ISectionBanner } from '../../types';
 const BannerData: ISectionBanner = {
   id: 1,
   title: 'Alex is a',
-  keyword: 'Web Designer and Full Software Developer',
+  keyword: 'Web Designer',
+  Keyword1: 'Full Software Developer',
   description: 'He crafts responsive websites where technologies meet creativity',
   buttonLable: 'Contact Me',
   buttonLink: '/contact',
