@@ -1,5 +1,3 @@
-import React from 'react';
-
 function FanFacts() {
   return (
     <div className="lg:max-w-4xl xl:max-w-[1031px] mx-auto px-4 lg:px-0 mt-10 lg:mt-0 lg:pb-20">
