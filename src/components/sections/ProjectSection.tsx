@@ -33,15 +33,15 @@ const ProjectSection = ({ data }: projectSectionProps) => {
               <img src={item.img} alt={item.title} className="w-full" />
             </div>
             <div className="border-b border-b-primary-gray px-2 py-2">
-              <p className="text-base font-normal text-primary-gray">{item.languages}</p>
+              <p className="text-sm font-normal text-primary-gray">{item.languages}</p>
             </div>
             <div className="py-4 px-4">
               <h2 className="text-2xl font-medium">{item.title}</h2>
-              <p className="text-primary-gray text-base font-normal pt-4 pb-4">{item.description}</p>
+              <p className="text-primary-gray text-sm font-normal pt-4 pb-4">{item.description}</p>
               <Link
                 to={item.buttonLink}
                 target="_blank"
-                className="inline-flex items-center whitespace-nowrap btn-shadow border border-primary-purple hover:bg-primary-purple hover:bg-opacity-80 text-white px-6 py-1 text-base font-normal"
+                className="inline-flex items-center whitespace-nowrap btn-shadow border border-primary-purple hover:bg-primary-purple hover:bg-opacity-80 text-white px-6 py-1 text-base font-normal transition-all ease-in-out delay-150"
               >
                 {item.buttonLable}
               </Link>
