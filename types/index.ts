@@ -35,6 +35,25 @@ export interface IHomePage {
   };
 }
 
+export interface IProjectPage {
+  header: string;
+  descrption: string;
+  Projects: IHomePage['Projects'];
+  smallProject: {
+    title: string;
+    items: Array<smallProjectItem>;
+  };
+}
+
+export type smallProjectItem = {
+  id: number;
+  language: string;
+  title: string;
+  description: string;
+  buttonLable: string;
+  buttonLink: string;
+};
+
 export type projectItem = {
   id: number;
   img: string;
