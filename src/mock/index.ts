@@ -79,7 +79,7 @@ const HomePageData: IHomePage = {
   contacts: {
     title: 'contacts',
     description:
-      'I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me',
+      "Crafting digital dreams into reality. Web wizard at your service—building stunning, impactful sites. Let's chat and create web magic! ✨",
     subTitle: 'Message me here',
     img: '/project/Email.svg',
     imgText: 'alexotieno900@gmail.com',
