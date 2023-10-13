@@ -18,7 +18,7 @@ const HomeContact = ({ data }: homeContactProps) => {
           </svg>
         </div>
       </div>
-      <div className="grid grid-cols-12 gap-14">
+      <div className="grid grid-cols-12 gap-8 md:gap-14">
         <div className="col-span-12 md:col-span-8">
           <p>{data.contacts.description}</p>
         </div>
