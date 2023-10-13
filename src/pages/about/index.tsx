@@ -3,13 +3,14 @@ import Header from '../../components/navigation/Header';
 import AboutSkills from '../../components/sections/about/AboutSkills';
 import AboutTopSection from '../../components/sections/about/AboutTopSection';
 import FanFacts from '../../components/sections/about/FanFacts';
+import { AboutPageData } from '../../mock';
 
 const About = () => {
   return (
     <div>
       <Header />
-      <AboutTopSection />
-      <AboutSkills />
+      <AboutTopSection data={AboutPageData} />
+      <AboutSkills data={AboutPageData} />
       <FanFacts />
       <Footer />
     </div>

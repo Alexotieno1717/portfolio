@@ -45,6 +45,13 @@ export interface IProjectPage {
   };
 }
 
+export interface IAboutPage {
+  title: string;
+  description: string;
+  img: string;
+  skills: IHomePage['skills'];
+}
+
 export type smallProjectItem = {
   id: number;
   language: string;

@@ -1,4 +1,4 @@
-import { IProjectPage, IHomePage } from '../../types';
+import { IProjectPage, IHomePage, IAboutPage } from '../../types';
 
 const HomePageData: IHomePage = {
   landingHero: {
@@ -170,4 +170,36 @@ const projectPageData: IProjectPage = {
   },
 };
 
-export { HomePageData, projectPageData };
+const AboutPageData: IAboutPage = {
+  title: 'About-me',
+  description:
+    "I am a Web Developer and Web Designer, and I'm very passionate and dedicated to my work. I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.",
+  img: '/assets/Home_art 1.svg',
+  skills: {
+    title: 'Skills',
+    skill: [
+      {
+        title: 'Language',
+        languages: 'TypeScript JavaScript Python PHP',
+      },
+      {
+        title: 'Frameworks',
+        languages: 'React Django Laravel React Native',
+      },
+      {
+        title: 'Database',
+        languages: 'MySQL SQLite PostgreSQL',
+      },
+      {
+        title: 'Tools',
+        languages: 'VSCode vim Linux Figma Git Vercel',
+      },
+      {
+        title: 'Others',
+        languages: 'HTML CSS REST SCSS Bootstrap Tailwind',
+      },
+    ],
+  },
+};
+
+export { HomePageData, projectPageData, AboutPageData };
