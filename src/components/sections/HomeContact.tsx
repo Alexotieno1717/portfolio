@@ -22,12 +22,14 @@ const HomeContact = ({ data }: homeContactProps) => {
         <div className="col-span-12 md:col-span-8">
           <p>{data.contacts.description}</p>
         </div>
-        <div className="col-span-12 md:col-span-4">
-          <h2 className="text-base font-semibold">{data.contacts.subTitle}</h2>
-          <div className="flex mt-2">
-            <img src={data.contacts.img} alt={data.contacts.title} className="" />
-            <p className="text-primary-gray text-base font-normal pt-1 pl-2">{data.contacts.imgText}</p>
-          </div>
+        <div className="col-span-12 md:col-span-4 border py-2 px-2">
+          <h2 className="text-base font-semibold pb-2">{data.contacts.contacts.title}</h2>
+          {data.contacts.contacts.contact.map((item, index) => (
+            <div className="flex mb-2" key={index}>
+              <img className="w-6" src={item.img} alt={item.id} />
+              <p className="text-sm font-normal text-primary-gray pt-1  pl-2">{item.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
