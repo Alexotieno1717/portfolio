@@ -7,7 +7,7 @@ interface completeProjectProps {
 
 function CompleteProject({ data }: completeProjectProps) {
   return (
-    <div className="lg:max-w-4xl xl:max-w-[1031px] mx-auto px-4 lg:px-0 mt-10 lg:py-20">
+    <div className="lg:max-w-4xl xl:max-w-[1031px] mx-auto px-4 lg:px-0 mt-24 lg:mt-0  lg:py-20">
       <div className="mb-6">
         <h1 className="text-3xl font-medium text-white">
           <span className="text-primary-purple">/</span>

@@ -8,7 +8,7 @@ const HomePageData: IHomePage = {
     Keyword1: 'Full Software Developer',
     description: 'He crafts responsive websites where technologies meet creativity',
     buttonLable: 'Contact Me',
-    buttonLink: '/contact',
+    buttonLink: '/contacts',
     img: '/assets/Home_art 1.svg',
   },
   Projects: {

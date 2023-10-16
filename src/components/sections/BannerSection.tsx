@@ -24,10 +24,10 @@ const BannerSection = ({ data }: BannerSectionProps) => {
         </div>
         <div>
           <img src={data.landingHero.img} alt="svg home art" className="w-[505px] h-[397px] pt-16" />
-          <div className="flex gap-2 border border-primary-gray w-[75%] ml-14 py-2 px-2">
+          <div className="flex gap-2 border border-primary-gray w-[80%] ml-14 py-2 px-2">
             <div className="bg-primary-purple w-4 h-4 mt-1 ml-"></div>
             <p className="text-primary-gray text-base font-semibold">
-              Currently Working on <span className="text-white">Portfolio</span>
+              Currently Working on <span className="text-white">Olive tree CMS</span>
             </p>
           </div>
         </div>
