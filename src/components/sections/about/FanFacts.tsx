@@ -1,4 +1,7 @@
-function FanFacts() {
+import img1 from '../../../assets/dots.png';
+import img2 from '../../../assets/log.png';
+
+const FanFacts = () => {
   return (
     <div className="lg:max-w-4xl xl:max-w-[1031px] mx-auto px-4 lg:px-0 mt-10 lg:mt-0 lg:pb-20">
       <div className="mb-6">
@@ -7,9 +10,9 @@ function FanFacts() {
           my-fun-facts
         </h1>
       </div>
-      <div className="grid grid-cols-12 gap-2">
-        <div className="col-span-8">
-          <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-12 gap-2 mb-8 md:mb-0">
+        <div className="col-span-12 md:col-span-8">
+          <div className="grid md:grid-cols-2 gap-2">
             <div className="text-primary-gray text-base font-normal border">
               <h1 className="text-white font-semibold py-2 px-2">I like winter more than summer</h1>
             </div>
@@ -21,10 +24,13 @@ function FanFacts() {
             </div>
           </div>
         </div>
-        <div className="col-span-4">djdjdj</div>
+        <div className="hidden md:block col-span-4">
+          <img src={img1} alt="dots" className="ml-14" />
+          <img src={img2} alt="logs" className="float-right mr-8" />
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default FanFacts;

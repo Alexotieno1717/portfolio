@@ -81,7 +81,7 @@ const HomePageData: IHomePage = {
     description:
       "Crafting digital dreams into reality. Web wizard at your service—building stunning, impactful sites. Let's chat and create web magic! ✨",
     contacts: {
-      title: 'Message me here',
+      title: 'Contact me here',
       contact: [
         {
           id: 'email',
@@ -232,7 +232,7 @@ const ContactPageData: IContactPage = {
   description2:
     "I thrive on collaboration, and your feedback is my secret sauce for creating stellar solutions. Imagine not just a website but a digital masterpiece that wows users. If you're ready for a tech journey filled with creativity and impact, let's chat! Your ideas, my skills—let's make some web magic together! 🚀",
   contacts: {
-    title: 'Message me here',
+    title: 'Contact me here',
     contact: [
       {
         id: 'email',
