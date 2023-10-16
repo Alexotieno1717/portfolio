@@ -1,4 +1,4 @@
-import { IProjectPage, IHomePage, IAboutPage } from '../../types';
+import { IProjectPage, IHomePage, IAboutPage, IContactPage } from '../../types';
 
 const HomePageData: IHomePage = {
   landingHero: {
@@ -80,9 +80,31 @@ const HomePageData: IHomePage = {
     title: 'contacts',
     description:
       "Crafting digital dreams into reality. Web wizard at your service—building stunning, impactful sites. Let's chat and create web magic! ✨",
-    subTitle: 'Message me here',
-    img: '/project/Email.svg',
-    imgText: 'alexotieno900@gmail.com',
+    contacts: {
+      title: 'Message me here',
+      contact: [
+        {
+          id: 'email',
+          img: '/project/Email.svg',
+          description: 'alexotieno900@gmail.com',
+        },
+        {
+          id: 'landmark',
+          img: '/project/Landmark.svg',
+          description: 'Nairobi, Kenya',
+        },
+        {
+          id: 'linkedin',
+          img: '/project/Linkedin.svg',
+          description: '@alex-otieno-66a049162',
+        },
+        {
+          id: 'phone',
+          img: '/project/phone.svg',
+          description: '+254 748815593',
+        },
+      ],
+    },
   },
 };
 
@@ -202,4 +224,38 @@ const AboutPageData: IAboutPage = {
   },
 };
 
-export { HomePageData, projectPageData, AboutPageData };
+const ContactPageData: IContactPage = {
+  title: 'Contact',
+  subTitle: 'Who am i?',
+  description1:
+    "Hey there! If you're on the lookout for a web development wizard, your search ends here. I'm all about turning your digital dreams into reality. Whether you need a mind-blowing web app, want to spice up your online presence, or dive into the latest tech trends, count me in!",
+  description2:
+    "I thrive on collaboration, and your feedback is my secret sauce for creating stellar solutions. Imagine not just a website but a digital masterpiece that wows users. If you're ready for a tech journey filled with creativity and impact, let's chat! Your ideas, my skills—let's make some web magic together! 🚀",
+  contacts: {
+    title: 'Message me here',
+    contact: [
+      {
+        id: 'email',
+        img: '/project/Email.svg',
+        description: 'alexotieno900@gmail.com',
+      },
+      {
+        id: 'landmark',
+        img: '/project/Landmark.svg',
+        description: 'Nairobi, Kenya',
+      },
+      {
+        id: 'linkedin',
+        img: '/project/Linkedin.svg',
+        description: '@alex-otieno-66a049162',
+      },
+      {
+        id: 'phone',
+        img: '/project/phone.svg',
+        description: '+254 748815593',
+      },
+    ],
+  },
+};
+
+export { HomePageData, projectPageData, AboutPageData, ContactPageData };

@@ -29,9 +29,10 @@ export interface IHomePage {
   contacts: {
     title: string;
     description: string;
-    subTitle: string;
-    img: string;
-    imgText: string;
+    contacts: {
+      title: string;
+      contact: Array<contactsItem>;
+    };
   };
 }
 
@@ -51,6 +52,23 @@ export interface IAboutPage {
   img: string;
   skills: IHomePage['skills'];
 }
+
+export interface IContactPage {
+  title: string;
+  subTitle: string;
+  description1: string;
+  description2: string;
+  contacts: {
+    title: string;
+    contact: Array<contactsItem>;
+  };
+}
+
+export type contactsItem = {
+  id: string;
+  img: string;
+  description: string | number;
+};
 
 export type smallProjectItem = {
   id: number;
