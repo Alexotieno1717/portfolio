@@ -11,7 +11,7 @@ const AppRoutes = () => {
       <Route path="/about" element={<About />} />
       <Route path="/works" element={<Project />} />
       <Route path="/contacts" element={<Contacts />} />
-      <Route path="*" element="Page does not exist" />
+      <Route path="*" element={<div>Page does not exist</div>} />
     </Routes>
   );
 };
