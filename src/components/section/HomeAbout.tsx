@@ -30,7 +30,6 @@ function HomeAbout({ data }: homeAboutProps) {
           >
             {data.aboutMe.buttonLable} -&gt;
           </Link>
-          <p>ddjjjdjndjdjdnj</p>
         </div>
         <div>
           <img src={data.aboutMe.img} alt={data.aboutMe.title} />

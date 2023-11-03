@@ -1,0 +1,15 @@
+{
+  "c": ["pages/index", "webpack"],
+  "r": ["pages/about", "pages/project"],
+  "m": [
+    "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2Fhome%2Falex%2FDocuments%2Freact%2Fportfolio%2Fsrc%2Fpages%2Fabout%2Findex.tsx&page=%2Fabout!",
+    "./src/components/section/about/AboutSkills.tsx",
+    "./src/components/section/about/AboutTopSection.tsx",
+    "./src/components/section/about/FanFacts.tsx",
+    "./src/pages/about/index.tsx",
+    "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2Fhome%2Falex%2FDocuments%2Freact%2Fportfolio%2Fsrc%2Fpages%2Fproject%2Findex.tsx&page=%2Fproject!",
+    "./src/components/section/project/CompleteProject.tsx",
+    "./src/components/section/project/SmallProjects.tsx",
+    "./src/pages/project/index.tsx"
+  ]
+}
