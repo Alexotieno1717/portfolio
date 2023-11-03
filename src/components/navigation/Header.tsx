@@ -1,10 +1,8 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Links } from "../../constants";
+import { Links } from "@/constants";
+import Link from "next/link";
 import { Nav } from "../ui/ComponentsStyled";
-import useScrollPosition from "../../hooks/useScrollPosition";
-import Logo from '../../assets/logo.svg'
-
+import useScrollPosition from "@/hooks/useScrollPosition";
+import { useState } from "react";
 
 interface HeaderProps {
   colors?: {
@@ -15,32 +13,29 @@ interface HeaderProps {
 }
 
 const defaultValues = {
-  bg: '#282C33',
-  buttonColor: '#C778DD ',
-  dividerColor: '#C778DD',
+  bg: "#282C33",
+  buttonColor: "#C778DD ",
+  dividerColor: "#C778DD",
 };
 
-
 const Header = ({ colors = defaultValues }: HeaderProps) => {
-
   const [collapsed, setCollapsed] = useState<boolean>(false);
 
   const scrollPosition = useScrollPosition();
 
   const toggleCollapse = () => setCollapsed(!collapsed);
-  
 
   return (
     <>
-    <Nav
+      <Nav
         $collapsed={collapsed}
         $scrollPosition={scrollPosition}
         $colors={colors}
         className="transition ease-in-out delay-150 fixed w-full z-20 top-0 left-0"
       >
         <div className="lg:max-w-4xl xl:max-w-[1031px]  flex flex-wrap items-center justify-between mx-auto px-4 lg:px-0 py-4">
-          <Link to="/" className="flex items-center">
-            <img src={Logo} alt="logo" className="w-48" />
+          <Link href="/" className="flex items-center">
+            <img src="/logo.svg" alt="logo" className="w-48" />
           </Link>
           <div className="flex">
             <button
@@ -71,14 +66,21 @@ const Header = ({ colors = defaultValues }: HeaderProps) => {
           </div>
           <div
             className={`"justify-between w-full ${
-              collapsed === false && 'hidden'
+              collapsed === false && "hidden"
             } lg:flex lg:w-auto lg:order-1"`}
             id="navbar-sticky"
           >
             <ul className="flex flex-col gap-2 lg:gap-0 lg:items-center p-4 lg:p-0 mt-4 font-medium rounded lg:flex-row lg:space-x-6 xl:space-x-8 lg:mt-0 lg:border-0">
               {Links.map((item, index) => (
-              <Link to={item.url} key={index} target={item.target} className="transition ease-in-out delay-150  hover:text-primary-purple">{item.label}</Link>
-            ))}
+                <Link
+                  href={item.url}
+                  key={index}
+                  target={item.target}
+                  className="transition ease-in-out delay-150  hover:text-primary-purple"
+                >
+                  {item.label}
+                </Link>
+              ))}
             </ul>
           </div>
         </div>

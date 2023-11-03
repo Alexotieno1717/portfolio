@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { IHomePage } from '../../../types';
 
 interface homeAboutProps {
@@ -25,11 +25,12 @@ function HomeAbout({ data }: homeAboutProps) {
           <p className="pb-6">{data.aboutMe.descrption}</p>
 
           <Link
-            to={data.aboutMe.buttonLink}
+            href={data.aboutMe.buttonLink}
             className="inline-flex items-center whitespace-nowrap btn-shadow border border-primary-purple hover:bg-primary-purple hover:bg-opacity-80 text-white px-6 py-1 text-base font-normal"
           >
             {data.aboutMe.buttonLable} -&gt;
           </Link>
+          <p>ddjjjdjndjdjdnj</p>
         </div>
         <div>
           <img src={data.aboutMe.img} alt={data.aboutMe.title} />

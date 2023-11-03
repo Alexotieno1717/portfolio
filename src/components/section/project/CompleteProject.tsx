@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { IProjectPage } from '../../../../types';
 
 interface completeProjectProps {
@@ -34,7 +34,7 @@ function CompleteProject({ data }: completeProjectProps) {
               <h2 className="text-2xl font-medium">{item.title}</h2>
               <p className="text-primary-gray text-sm font-normal pt-4 pb-4">{item.description}</p>
               <Link
-                to={item.buttonLink}
+                href={item.buttonLink}
                 target="_blank"
                 className="inline-flex items-center whitespace-nowrap btn-shadow border border-primary-purple hover:bg-primary-purple hover:bg-opacity-80 text-white px-6 py-1 text-base font-normal transition-all ease-in-out delay-150"
               >

@@ -1,8 +1,4 @@
-import img from '../../assets/logo.svg';
-import twitter from '../../assets/Twitter.svg';
-import linkedin from '../../assets/Linkedin.svg';
-import github from '../../assets/github.svg';
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,21 +7,28 @@ const Footer = () => {
       <div className="lg:max-w-4xl xl:max-w-[1031px] mx-auto px-4 lg:px-0 mt-8">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="pb-8 md:pb-0">
-            <img src={img} alt="" className="w-48" />
-            <p className="text-base pt-4">Web designer and Full-Stack developer</p>
-            <p className="text-xs pt-2 text-primary-gray">Design Credit ~ Elias from Figma community</p>
+            <img src="/logo.svg" alt="" className="w-48" />
+            <p className="text-base pt-4">
+              Web designer and Full-Stack developer
+            </p>
+            <p className="text-xs pt-2 text-primary-gray">
+              Design Credit ~ Elias from Figma communities
+            </p>
           </div>
           <div>
             <h1 className="text-left pb-3">Media</h1>
             <div className="flex gap-2">
-              <Link to="https://github.com/Alexotieno1717" target="_blank">
-                <img src={github} alt="github" />
+              <Link href="https://github.com/Alexotieno1717" target="_blank">
+                <img src="/project/Github.svg" alt="github" />
               </Link>
-              <Link to="https://www.linkedin.com/in/alex-otieno-66a049162/" target="_blank">
-                <img src={linkedin} alt="linkedin" />
+              <Link
+                href="https://www.linkedin.com/in/alex-otieno-66a049162/"
+                target="_blank"
+              >
+                <img src="/project/Linkedin.svg" alt="linkedin" />
               </Link>
-              <Link to="https://twitter.com/Bug_Killer01" target="_blank">
-                <img src={twitter} alt="twitter" />
+              <Link href="https://twitter.com/Bug_Killer01" target="_blank">
+                <img src="/project/Twitter.svg" alt="twitter" />
               </Link>
             </div>
           </div>
